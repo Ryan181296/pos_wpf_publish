@@ -1,0 +1,53 @@
+{
+  "IsDevelopmentMode": false,
+  "WebhostPort": 8686,
+  "APISettings": {
+    "RefreshTokenSettings": {
+      "BaseAddress": "https://pho24-api-pos-sale.two.vn/api/",
+      "TimeOutSeconds": 60
+    },
+    "Clients": [
+      {
+        "TypeId": 1,
+        "Name": "Default Client",
+        "BaseAddress": "https://pho24-api-pos-sale.two.vn/api/",
+        "TimeOutSeconds": 60
+      },
+      {
+        "TypeId": 2,
+        "Name": "Inventory Client",
+        "BaseAddress": "https://pho24-api-pos-retail.two.vn/api/",
+        "TimeOutSeconds": 60
+      },
+      {
+        "TypeId": 3,
+        "Name": "Async Client",
+        "BaseAddress": "https://pho24-api-fro-async.two.vn/api/",
+        "TimeOutSeconds": 60
+      },
+      {
+        "TypeId": 4,
+        "Name": "Local Client",
+        "TimeOutSeconds": 60
+      },
+      {
+        "TypeId": 5,
+        "Name": "BIDV Client",
+        "BaseAddress": "https://prod-api.zap.vn/",
+        "TimeOutSeconds": 60
+      }
+    ]
+  },
+  "SecondaryScreenSettings": {
+    "VFDConnectionComname": "COM6"
+  },
+  "FirebaseSettings": {
+    "ProjectId": "pho24-production",
+    "ServiceAccountFilename": "firebaseServiceAccount.Json"
+  },
+  "Logging": {
+    "LogLevel": {
+      "Default": "None"
+    }
+  }
+}
